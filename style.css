@@ -1,77 +1,336 @@
-<!DOCTYPE html>
-<!DOCTYPE html>
-<html>
- <head>
+@import url("https://fonts.googleapis.com/css2?family=Lora&family=Roboto:wght@100&display=swap");
 
-	<title>Home Page </title>
-	<meta charset="utf-8">
-	<link rel="stylesheet" href="style.css">
- </head>
 
- <body>
-    <div header>
-            
-     </div>
-     <div class="Container">
-         <h1> <p> FOOTSTAT.COM </p> </h1>
-        
-        </div>
-     
+body {
+  font-family: 'Lora', serif;
+  font-size: 18px;
+  margin: 0px;
+}
+h1 {
+  font-family: 'Roboto', sans serif;
+  font-weight: normal;
+  text-align: center;
+  font-size: 35px;
+}
+h2 {
+font-family: 'Hatton', sans serif;
+  font-weight: initial;
+  text-align: center;
+}
+h3 {
+    font-family: 'Roboto', sans serif;
+    font-weight: normal;
+    text-align: justify;
+    font-size: 20px;
+  }
 
-     <div class="Container">
-         
-        <div class="header nav p">
-                
-            <nav>
-                
-                
-                <ul id="navigation">
-                    <li> <a href="">Home</a> </li>
-                    <li> <a href="">Rumours of the day</a> </li>
-                    <li> <a href="">Top 10 most expensive</a> </li>
-                    <li> <a href="">Top 20 per Country</a> </li>
-                    <li> <a href="">Forum</a> </li>
-                    <li> <a href="">Contact</a> </li>
-              
-                </ul>
-            <br>
-        
+a {
+  text-decoration: none;
+}
 
-            </nav>
-        </div>
-    </header>
-    
-    <div id="conteneur">
-        
-         <div id="Paris" style="width: 50%" > 
-             <h1> <strong>Bayern - PSG: Great match, great Mbappé!</strong>  </h1>
-    
-            <img src="Mbappe.jpeg" class="screen" />  
-            <h3> PSG's 2-3 victory over Bayern in the first leg of the Champions League quarter-finals on Wednesday was a major achievement for the club, with Kylian Mbappé scoring a brace. It's a great way to get to the top of the table," he said, "and it's a great way to get to the top of the table.</h3>
-         </div>
+/* AVATAR CSS */
 
-         <div id="Haaland" style="width: 50%"> 
-             <h1>  <strong> Market value </strong>   </h1>
 
-             <img src="haaland.jpeg" class="screen"/> 
-    
-         <h3> The latest update causes a major shift among the most valuable players in the German top flight. While Jadon Sancho remains at €100m, his Borussia Dortmund teammate Erling Haaland has taken the top spot with a €10m capital gain.</h3> 
-        </div>
-        
+.Avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
 
- </div>
+/* BANNER CSS */
 
- <div class="rssfeed"> 
-    <h1>  Football News RSS Feed </h1> 
+.banner h1 {
+  font-size: 50px;
+}
+.banner h2 {
+  font-size: 30px;
+  font-weight: lighter;
+  opacity: 0.8;
+  margin-bottom: 40px;
+}
 
-    <rssapp-magazine id="ShHgAddeyoGaRCdH"></rssapp-magazine><script src="https://widget.rss.app/v1/magazine.js" type="text/javascript" async></script> </div>
+.banner img {
+  margin: 0 350px;
+}
+
+
+
+/* BUTTON CSS */
+
+.btn-blue {
+  background-color: #ABD5D1;
+  padding: 30px 50px;
+  border-radius: 4px;
+  color: black;
+  font-weight: bold;
+  font-family: 'Hatton', sans serif;
+  margin-left: 230px;
+}
+
+/* CARDS CSS */
+
+.Cards {
+  align-content: center;
+
+}
+
+.Card {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0px 10px 30px rgba(0,0,0,0.2);
+  border-radius: 15px;
+  margin: 10px;
+  flex-basis: 250px;
+  flex-grow: 1;
+}
+.Card img {
+  width: 150px;
+  border-radius: 6px;
+}
+.Card h3 {
+  flex-grow: 1;
+  padding-left: 20px;
+  font-size: 18px;
+
+}
+
+/* CONTAINER CSS */
+
+.container {
+  width: 900px;
+  margin: 80px auto;
+  background-color:#B0C4DE ;
   
-            
-             
+}
+
+@media (max-width: 960px) {
+  /* For a screen < 960px, this CSS will be read */
+  .container {
+    width: 700px;
+  }
+}
+@media (max-width: 720px) {
+  /* For a screen < 720px, this CSS will be read */
+  .container {
+    width: 500px;
+  }
+}
+@media (max-width: 540px) {
+  /* For a screen < 540px, this CSS will be read */
+  .container {
+    width: 300px;
+  }
+}
 
 
- 	
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
 
 
- </body>
- </html>
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+#navigation li {
+    display: inline ;
+    margin-right: 1px ;
+    color: rgba(255, 255, 255, 0.979) ;
+    background: rgb ;
+  }
+  #navigation {
+    margin: 0 ;
+    padding: 0 ;
+    list-style: none ;
+    text-align: center ;
+    font-size: 30px;
+  }
+  #navigation li a {
+    display: inline;
+    background: rgb(244, 245, 247) ;
+    color: rgb(5, 0, 0) ;
+    font: 1em "Trebuchet MS",Arial,sans-serif ;
+    line-height: 1em ;
+    text-align: center ;
+    text-decoration: none ;
+    margin-right: 1px ;
+  }
+
+  #navigation li a:hover, #navigation li a:focus, #navigation li a:active {
+    background: #B0C4DE; ;
+    text-decoration: underline ;
+  }
+  /* Rounded border */
+hr.rounded {
+    border-top: 8px solid #bbb;
+    border-radius: 5px;
+  }
+
+  .box {
+    display: flex;
+    border-radius: 20%;
+
+  }
+
+  #RssFeed {
+    display: inline;
+    border-radius: 20%;
+
+  }
+  #conteneur
+{
+
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 10px 30px rgba(0,0,0,0.2);
+    border-width: 6px;
+    border-style:inset;
+    font-style: normal;
+    text-align:justify;
+    background-color:#B0C4DE;
+}
+#Paris {
+    border-style:initial;
+    border-width: 4px;
+    border-color:rgba(78, 78, 80, 0.733);
+    font-family: 'Roboto', sans serif;
+    font-style: normal;
+  text-align:justify;
+  padding: 20px;
+  align-items: center;
+ 
+
+}
+#haaland {
+    border-style:inset;
+    border-width: 4px;
+    border-color:rgba(78, 78, 80, 0.733);
+    font-family: 'Roboto', sans serif;
+    font-style: normal;
+  text-align:justify;
+  padding: 20px;
+  align-items: center;
+  
+
+}
+
+.screen {
+    display: block;
+    width: 400;
+    height: 500;
+    margin: auto;
+    align-items: center;
+}
+@import "compass/css3";
+
+
+
+*, 
+*:before, 
+*:after {
+   @include box-sizing(border-box); 
+}
+
+html, body {
+  background: #B0C4DEf1;
+  font-family: 'Roboto', sans-serif;
+  padding: 1em;
+}
+
+h1 {
+   text-align: center;
+   color: #070202;
+   @include text-shadow(1px 1px 0 rgba(white, 1));
+}
+
+form {
+   max-width: 900px;
+   max-height: 700px;
+   text-align: center;
+   margin: 30px auto;
+  
+  input, textarea {
+     border:0; outline:0;
+     padding: 1em;
+     @include border-radius(8px);
+     display: block;
+     width: 100%;
+     margin-top: 1em;
+     font-family: 'Roboto', sans-serif;
+     @include box-shadow(0 1px 1px rgba(black, 0.1));
+     resize: none;
+    
+    &:focus {
+       @include box-shadow(0 0px 2px rgba($, 1)!important);
+    }
+  }
+  
+  #input-submit {
+     color: white; 
+     background: $#B0C4DEf1;
+     cursor: pointer;
+    
+    &:hover {
+       @include box-shadow(0 1px 1px 1px rgba(#aaa, 0.6)); 
+    }
+  }
+  
+  textarea {
+      height: 450px;
+  }
+}
+
+
+.half {
+  float: left;
+  width: 48%;
+  margin-bottom: 1em;
+}
+
+.right { width: 50%; }
+
+.left {
+     margin-right: 2%; 
+     
+}
+
+
+@media (max-width: 480px) {
+  .half {
+     width: 100%; 
+     float: none;
+     margin-bottom: 0; 
+  }
+}
+
+
+/* Clearfix */
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
